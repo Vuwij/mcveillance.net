@@ -12,17 +12,39 @@ namespace mcveillance.net.Controllers
         {
             return View();
         }
-
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "About Jason";
 
             return View();
         }
+        public ActionResult Camera()
+        {
+            ViewBag.Message = "Under Contruction";
 
+            return View();
+        }
+        public ActionResult Courses()
+        {
+            ViewBag.Message = "Under Contruction";
+
+            return View();
+        }
+        public ActionResult Robosoccer()
+        {
+            ViewBag.Message = "RoboSoccer information";
+
+            return View();
+        }
+        public ActionResult Macabre()
+        {
+            ViewBag.Message = "Video Game";
+
+            return View();
+        }
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact Me?";
 
             return View();
         }

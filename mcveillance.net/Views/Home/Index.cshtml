@@ -1,31 +1,58 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Jason Wang: University of Toronto";
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Jason Wang</h1>
+    <p class="lead">3rd Year, Electrical Engineering Student, University of Toronto</p>
+    <hr />
+    <p>
+        <span class="glyphicon glyphicon-smglyphicon-info-sign"></span> My philsophy about philosophy is that there is no point philosophizing about philosophy,
+        this which I just philosophized constitutes the philosophy of philosophy, that philosophical
+        obvervations are recursively NP hard, and there is no turing machine or brain which can solve
+        all the layered philosophies.
+    </p>
+    <p>
+        If you want to read about someone elses philosophy <a href="https://www.jeremychanhaowang.com/what-is-an-engineering-philosophy/">Jeremy</a>
+        here has a lot of philosophical arguments, which you can read, and you can not read. Whatever. Why read someone else philosophy anyway? Everyone wants other
+        people to be like them.        
+    </p>
+    <p>
+        Enough said, you can download my resume here, see my <a href="http://www.github.com/Vuwij">Github</a> profile here, 
+        <a href="https://www.linkedin.com/in/vuwij/">linkedIn</a> profile here @Html.ActionLink("Projects", "About", "Home") here. What else are you here anyways?
+    </p>
+    
+    @Html.Partial("_HorizontalBar")
+
+    <div class="rpw" style="padding-top:0px;">
+        <!-- Include the library. -->
+        <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+
+        <!-- Prepare a container for your calendar. -->
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+
+        <script>
+            GitHubCalendar(".calendar", "Vuwij");
+        </script>
+    </div>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>Robots</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.[2] Robots can be guided by an external control device or the control may be embedded within. Robots may be constructed to take on human form but most robots are machines designed to perform a task with no regard to how they look.
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Machine Learning</h2>
+        <p>Machine learning is the subfield of computer science that, according to Arthur Samuel in 1959, gives "computers the ability to learn without being explicitly programmed."[1] Evolved from the study of pattern recognition and computational learning theory in artificial intelligence,[2] machine learning explores the study and construction of algorithms that can learn from and make predictions on data – such algorithms overcome following strictly static program instructions by making data-driven predictions or decisions, through building a model from sample inputs.</p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Computer Vision</h2>
+        <p>Computer vision is an interdisciplinary field that deals with how computers can be made for gaining high-level understanding from digital images or videos. From the perspective of engineering, it seeks to automate tasks that the human visual system can do.</p>
     </div>
 </div>
